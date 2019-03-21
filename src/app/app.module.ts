@@ -12,6 +12,8 @@ import { MatToolbarModule, MatExpansionModule,
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -38,6 +40,8 @@ import { FormsModule } from '@angular/forms';
     MatListModule,
     MatButtonModule,
     MatSnackBarModule,
+    MatCardModule,
+    MatIconModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, 
     AngularFireAuthModule, 

@@ -3,3 +3,13 @@
         width: 100%
     }
 }
+
+.example-card {
+    max-width: 400px;
+    margin-top: 5px;
+}
+
+.separado{
+    display: flex;
+    justify-content: space-between;
+}

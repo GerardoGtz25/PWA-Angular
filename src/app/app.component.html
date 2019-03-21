@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-toolbar color="accent">
-  <span>Smart notes</span>
+  <span>Angular notas</span>
 </mat-toolbar>
 <div style="text-align:center">
   <h2>
@@ -41,12 +41,15 @@
   </mat-expansion-panel>
 </mat-accordion>
 
-<mat-list>
-  <mat-list-item *ngFor="let nota of notas" (click)="seleccionarNota(nota)">
-    <h3 matLine>{{nota.titulo}}</h3>
-    <p matLine> {{nota.cuerpo}}</p>
+<mat-card class="example-card" *ngFor="let nota of notas" (click)="seleccionarNota(nota)">
+  <div class="separado">
+    <h3>{{nota.titulo}}</h3>
+    <mat-icon (click)="eliminarNota(nota)">delete</mat-icon>
+  </div>
+  <mat-card-content>
+    <p>{{nota.cuerpo}}</p>
     <small matLine>{{nota.categoria}} - {{nota.id | date}}</small>
-  </mat-list-item>
-</mat-list>
+  </mat-card-content>
+</mat-card>
 
 <router-outlet></router-outlet>

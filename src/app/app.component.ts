@@ -48,6 +48,15 @@ export class AppComponent implements OnInit {
     this.nota = nota
   }
 
+  eliminarNota(nota) {
+    this.nodesService.deleteNote(nota.id).then(() => {
+      this.nota = {}
+      this.snackBar.open('Nota eliminada', null, {
+        duration: 2000,
+      });
+    })
+  }
+
   
 
 

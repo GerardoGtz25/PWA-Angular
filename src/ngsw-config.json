@@ -26,16 +26,15 @@
   ],
   "dataGroups": [
     {
-      "name": "RedditAPI",
+      "name": "FirebaseAPI",
       "urls": [
-        "https://reddit.com/r/pics.json",
-        "https://reddit.com/r/**"
+        "https://angular-notas-f4e64.firebaseio.com"
       ],
       "cacheConfig":{
         "strategy": "freshness",
-        "maxAge": "1d",
+        "maxAge": "2h",
         "maxSize": 100,
-        "timeout": "3s"
+        "timeout": "5s"
       }
     }
   ]
